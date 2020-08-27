@@ -13,6 +13,7 @@ import styled from 'styled-components';
 import NewPasswordInput from '../NewPasswordInput';
 import uiSettings from '@polkadot/ui-settings';
 import print from 'print-js'
+import ToastProvider from '@polkadot/react-components/Toast/ToastProvider';
 
 interface Props extends ModalProps {
   className?: string;
@@ -253,6 +254,7 @@ function NewCreate ({ className = '', onClose, onStatusChange, seed: propsSeed, 
       {step === 1 ?
         <>
           <Modal.Content>
+            <ToastProvider>
             <AddressRow
               defaultName={name}
               noDefaultNameOpacity
@@ -303,6 +305,7 @@ function NewCreate ({ className = '', onClose, onStatusChange, seed: propsSeed, 
               value={isMnemonicSaved}
               label={<>{t<string>('I have saved my mnemonic seed safely')}</>}
             />
+          </ToastProvider>
           </Modal.Content>
           <div className='ui--Modal-Footer'>
             <Button
