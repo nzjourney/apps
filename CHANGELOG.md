@@ -1,5 +1,75 @@
 # CHANGELOG
 
+## 0.64.1 Oct 26, 2020
+
+Contributed:
+
+- New account creation dialog (Thanks to https://github.com/EthWorks)
+- Update Darwinia Crab types (Thanks to https://github.com/WoeOm)
+- Update Kulupu types (Thans to https://github.com/sorpaas)
+- Add Hanonycash types & endpoints (Thanks to https://github.com/Hanonycash)
+- Update ko i18n (Thanks to https://github.com/maestro779)
+- Update links in apps-config (Thanks to https://github.com/NukeManDan)
+
+Changes:
+
+- Allow for Ascii inputs on Bytes (in addition to hex & files)
+- Ensure that InputNumber respects the biLength for the type it is dealing with
+- Displays the last blocks containing contract executions in contract overview
+- Parse contract events (both status pops-up and explorer views)
+- Display actual codeHash (and allow copy) as part of code management
+- Adjust labels for contracts UI with explicit "None" projection
+- Adjust contracts UI to actually use Balance types where so specified in the ABI
+- Add support for Solang i256 & u256 types
+- Adjust contract messages to display names in camelCase (consistent with API)
+- Add gas estimation for contracts
+- Adjust JS bundles to have a better parallel throughput
+- Adjust checks for Aura for unbonding, displaying on era
+
+
+## 0.63.1 Oct 19, 2020
+
+Contributed:
+
+- Updates for new Acala testnet (Thanks to https://github.com/aniiantt)
+- Update i18n ko (Thanks to https://github.com/maestro779)
+- Update i18n fr (Thanks to https://github.com/Tbaut)
+- Contract metadata display bg on dark mode (Thanks to https://github.com/Tbaut)
+
+Changes:
+
+- Swap chain/prefix lookups to `@polkadot/networks` (single area to manage)
+- Fix formatting for large decimals on InputNumber (previously had toNumber)
+- Adjust Dock logos naming (aligns with network identifier)
+- Update i18n generation to handle routing strings
+- Estimate contracts execution gas (on contract call)
+- Use RPC for rent projection (to project eviction as available)
+- Metadata QR now aligns decimals with UI defaults (shared with react-api values)
+- Add endpoint for Canvas testnet (& setup types for node)
+
+
+## 0.62.1 Oct 13, 2020
+
+Contributed:
+
+- Add Dock network (Thanks to https://github.com/lovesh)
+- Bump Edgeware types for network updates (Thanks to https://github.com/jnaviask)
+- Add French i18n (Thanks to https://github.com/Tbaut & https://github.com/chevdor)
+- Update Italian i18n (Thanks to https://github.com/fomod-in)
+- Update Indonesian i18n (Thanks to https://github.com/nzjourney)
+
+Changes:
+
+- Update the contracts UI to support ink! 3.0-rc1 (via API)
+- Align contracts UI with the L&F/layout of the rest of the UI
+- Add contracts on-chain overview
+- Show code & contract availability statuses
+- Auto-query non-param messages from the contract overview
+- Expand info on logos (documentation, better/easier additions)
+- Update i18n to remove left navbar references
+- Support seconding multiple times from a single account
+
+
 ## 0.61.1 Oct 5, 2020
 
 Contributed:

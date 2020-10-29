@@ -15,17 +15,19 @@ import chainRococoTrick from './chains/rococo-trick.svg';
 // defaults for the node type, assuming we don't have a specific chain, but rather match on the implementation
 // alphabetical
 import nodeAcala from './nodes/acala-circle.svg';
+import nodeCanvas from './nodes/canvas-2.png';
 import nodeCentrifuge from './nodes/centrifuge.png';
 import nodeCrab from './nodes/crab.svg';
 import nodeCrust from './nodes/crust.svg';
 import nodeDarwinia from './nodes/darwinia.png';
-import nodeDockMainnet from './nodes/dock-mainnet.svg';
-import nodeDockTestnet from './nodes/dock-testnet.svg';
+import nodeDockMainnet from './nodes/dock-mainnet.png';
+import nodeDockTestnet from './nodes/dock-testnet.png';
 import nodeEdgeware from './nodes/edgeware-circle.svg';
 import nodeEncointerNotee from './nodes/encointer-notee.svg';
 import nodeEncointerTeeproxy from './nodes/encointer-teeproxy.svg';
 import nodeEquilibrium from './nodes/equilibrium.svg';
 import nodeNodle from './nodes/nodle.svg';
+import nodeHanonycash from './nodes/hanonycash.svg';
 import nodeKilt from './nodes/kilt.svg';
 import nodeKulupu from './nodes/kulupu.svg';
 import nodeLaminar from './nodes/laminar-circle.svg';
@@ -54,7 +56,7 @@ import externalSubscan from './external/subscan.svg';
 import emptyLogo from './empty.svg';
 
 // overrides based on the actual matched chain name
-// NOTE: this matchs up with RPC system.chain
+// NOTE: this matches up with RPC system.chain
 // alphabetical
 const chainLogos: Record<string, any> = [
   ['Dusty', chainDusty],
@@ -76,6 +78,7 @@ const chainLogos: Record<string, any> = [
 // alphabetical
 const nodeLogos: Record<string, any> = [
   ['airalab-robonomics', nodeRobonomics],
+  ['Canvas Node', nodeCanvas],
   ['centrifuge chain', nodeCentrifuge],
   ['Centrifuge Chain Node', nodeCentrifuge],
   ['crab', nodeCrab],
@@ -86,6 +89,7 @@ const nodeLogos: Record<string, any> = [
   ['Encointer Node', nodeEncointerNotee],
   ['Encointer Node noTEE', nodeEncointerNotee],
   ['Encointer Node TEE proxy', nodeEncointerTeeproxy],
+  ['hanonycash', nodeHanonycash],
   ['KILT Node', nodeKilt],
   ['kulupu', nodeKulupu],
   ['node-template', nodeSubstrate],
@@ -112,15 +116,17 @@ const nodeLogos: Record<string, any> = [
 const namedLogos: Record<string, any> = {
   acala: nodeAcala,
   alexander: nodePolkadot,
+  canvas: nodeCanvas,
   centrifuge: nodeCentrifuge,
   crab: nodeCrab,
   crust: nodeCrust,
-  dockMainnet: nodeDockMainnet,
-  dockTestnet: nodeDockTestnet,
+  'dock-mainnet': nodeDockMainnet,
+  'dock-testnet': nodeDockTestnet,
   dusty: chainDusty,
   edgeware: nodeEdgeware,
   empty: emptyLogo,
   equilibrium: nodeEquilibrium,
+  hanonycash: nodeHanonycash,
   kilt: nodeKilt,
   kulupu: nodeKulupu,
   kusama: chainKusama,
